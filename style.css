@@ -45,35 +45,20 @@ header{
 
 }
 
-.logo-circle{
+.logo{
 
-    width:8vh;
+width:65px;
 
-    height:8vh;
+height:85px;
 
-    border-radius:50%;
+border-radius:50%;
 
-    background:white;
+background:white;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    overflow:hidden;
+padding:5px;
 
 }
 
-.logo-circle img{
-
-    width:92%;
-
-    height:92%;
-
-    object-fit:contain;
-
-}
 
 .title h1{
 
