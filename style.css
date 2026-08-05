@@ -160,10 +160,10 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:15px 25px;
-
+height:80px;
+padding:10px 20px;
 border-radius:15px;
-
+margin-bottom:8px;
 background:rgba(255,255,255,.15);
 
 backdrop-filter:blur(15px);
@@ -190,7 +190,7 @@ Rank
 
 font-size:55px;
 
-width:90px;
+width:60px;
 
 text-align:center;
 
