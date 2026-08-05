@@ -7,7 +7,7 @@
     box-sizing:border-box;
 }
 h1{
-   font-size:38px;
+   font-size:28px;
    font-weight:800;
    letter-spacing:2px;
    color:#ff8c00;
@@ -63,13 +63,13 @@ Header
 header{
 
 display:flex;
-   height:130px;
+   height:75px;
 
 justify-content:space-between;
 
 align-items:center;
 
-padding:15px 35px;
+padding:8px 20px;
 
 background:rgba(255,255,255,.08);
 
@@ -91,9 +91,9 @@ gap:20px;
 
 .logo{
 
-width:65px;
+width:50px;
 
-height:85px;
+height:65px;
 
 border-radius:50%;
 
@@ -105,7 +105,7 @@ padding:3px;
 
 h1{
 
-font-size:38px;
+font-size:28px;
 
 font-weight:700;
 
@@ -118,18 +118,20 @@ h3{
 font-weight:300;
 
 opacity:.9;
-   font-size:18px;
+   font-size:13px;
 
 }
 
 #clock{
 
-font-size:28px;
+font-size:20px;
 
 font-weight:bold;
 
 }
-
+.date{
+   font-size:18px;
+}
 /* ==========================
 Leaderboard
 ========================== */
@@ -137,14 +139,14 @@ Leaderboard
 #leaderboard{
 
 width:90%;
-height:calc(100vh-110px)
+
 margin:10px auto;
 
 display:grid;
-grid-template-rows:repeat(4,1fr);
+grid-template-rows:repeat(4,70px);
 flex-direction:column;
 
-gap:10px;
+gap:8px;
 
 }
 
@@ -154,22 +156,20 @@ Cards
 
 .card{
 
-display:flex;
-
-justify-content:space-between;
-
+display:grid;
+grid-template-columns:70px 1fr 90px;;
 align-items:center;
 
-height:100%;
-padding:10px 25px;
-border-radius:18px;
+height:70px;
+padding:0 18px;
+border-radius:14px;
 background:rgba(255,255,255,.15);
 
-backdrop-filter:blur(15px);
+backdrop-filter:blur(12px);
 
-box-shadow:0 8px 20px rgba(0,0,0,.30);
+box-shadow:0 6px 18px rgba(0,0,0,.25);
 
-border-left:12px solid white;
+border-left:10px solid white;
 
 }
 
@@ -185,9 +185,9 @@ Rank
 
 .rank{
 
-font-size:55px;
+font-size:34px;
 
-width:60px;
+width:50px;
 
 text-align:center;
 
@@ -199,15 +199,11 @@ House Name
 
 .house{
 
-font-size:25px;
+font-size:18px;
 
 font-weight:700;
 
-flex:1;
-
-padding-left:15px;
-
-letter-spacing:2px;
+padding-left:10px;
 
 }
 
@@ -217,9 +213,10 @@ Score
 
 .score{
 
-font-size:35px;
+font-size:28px;
 
 font-weight:700;
+   text-align:right;
 
 }
 
@@ -275,19 +272,19 @@ padding:20px;
 
 .rank{
 
-font-size:38px;
+font-size:34px;
 
 }
 
 .house{
 
-font-size:26px;
+font-size:18px;
 
 }
 
 .score{
 
-font-size:34px;
+font-size:28px;
 
 }
 
@@ -299,7 +296,7 @@ font-size:28px;
 
 .logo{
 
-width:65px;
+width:50px;
 
 height:65px;
 
