@@ -136,12 +136,12 @@ Leaderboard
 
 #leaderboard{
 
-width:88%;
+width:90%;
+height:calc(100vh-110px)
+margin:10px auto;
 
-margin:40px auto;
-
-display:flex;
-
+display:grid;
+grid-template-rows:repeat(4,1fr);
 flex-direction:column;
 
 gap:10px;
@@ -160,17 +160,14 @@ justify-content:space-between;
 
 align-items:center;
 
-height:80px;
-padding:10px 20px;
-border-radius:15px;
-margin-bottom:8px;
+height:100%;
+padding:10px 25px;
+border-radius:18px;
 background:rgba(255,255,255,.15);
 
 backdrop-filter:blur(15px);
 
-box-shadow:0 12px 35px rgba(0,0,0,.35);
-
-transition:.4s;
+box-shadow:0 8px 20px rgba(0,0,0,.30);
 
 border-left:12px solid white;
 
@@ -251,24 +248,6 @@ border-left:15px solid #2196f3;
 .topaz{
 
 border-left:15px solid #ffca28;
-
-}
-
-/* ==========================
-Footer
-========================== */
-
-footer{
-
-margin-top:25px;
-
-text-align:center;
-
-padding:10px;
-
-font-size:10px;
-
-background:rgba(255,255,255,.08);
 
 }
 
