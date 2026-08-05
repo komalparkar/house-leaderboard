@@ -1,317 +1,269 @@
-/* ==========================
-   GOOGLE FONT
-========================== */
-*{
+/* ===========================
+FULL SCREEN RESPONSIVE
+=========================== */
+
+html,
+body{
+
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+
 }
-h1{
-   font-size:52px;
-   font-weight:800;
-   letter-spacing:2px;
-   color:#ff8c00;
-}
+
 body{
 
     font-family:'Poppins',sans-serif;
-    overflow-x:hidden;
-    min-height:100vh;
 
-    background:linear-gradient(-45deg,
-        #001F54,
-        #003B8E,
-        #0059C9,
-        #0A84FF);
+    display:grid;
+
+    grid-template-rows:12vh 82vh 6vh;
+
+    background:linear-gradient(135deg,#001F54,#003B8E,#0059C9,#001F54);
 
     background-size:400% 400%;
 
-    animation:gradientMove 12s ease infinite;
-
-    color:white;
+    animation:bgMove 18s ease infinite;
 
 }
 
-/* ==========================
-   Animated Background
-========================== */
-
-@keyframes gradientMove{
-
-0%{background-position:0% 50%;}
-
-50%{background-position:100% 50%;}
-
-100%{background-position:0% 50%;}
-
-}
-
-/* ==========================
-Header
-========================== */
+/* ===========================
+HEADER
+=========================== */
 
 header{
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-align-items:center;
+    align-items:center;
 
-padding:20px 40px;
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(12px);
-
-border-bottom:1px solid rgba(255,255,255,.2);
+    padding:1vh 2vw;
 
 }
 
-.left{
+.logo-circle{
 
-display:flex;
+    width:8vh;
 
-align-items:center;
+    height:8vh;
 
-gap:20px;
+    border-radius:50%;
 
-}
+    background:white;
 
-.logo{
+    display:flex;
 
-width:65px;
+    justify-content:center;
 
-height:85px;
+    align-items:center;
 
-border-radius:50%;
-
-background:white;
-
-padding:5px;
+    overflow:hidden;
 
 }
 
-h1{
+.logo-circle img{
 
-font-size:42px;
+    width:92%;
 
-font-weight:700;
+    height:92%;
 
-letter-spacing:2px;
-
-}
-
-h3{
-
-font-weight:300;
-
-opacity:.9;
+    object-fit:contain;
 
 }
 
-#clock{
+.title h1{
 
-font-size:28px;
+    font-size:2.5vw;
 
-font-weight:bold;
+    font-weight:800;
+
+    color:#FFD700;
 
 }
 
-/* ==========================
-Leaderboard
-========================== */
+.title h3{
+
+    font-size:1.2vw;
+
+    margin-top:.3vh;
+
+}
+
+.datetime{
+
+    text-align:right;
+
+}
+
+.date{
+
+    font-size:1.2vw;
+
+}
+
+.time{
+
+    font-size:2vw;
+
+    font-weight:bold;
+
+    color:#FFD700;
+
+}
+
+/* ===========================
+MAIN
+=========================== */
+
+main{
+
+    width:96%;
+
+    margin:auto;
+
+    overflow:hidden;
+
+}
+
+/* ===========================
+LEADERBOARD
+=========================== */
 
 #leaderboard{
 
-width:88%;
+    height:100%;
 
-margin:40px auto;
+    display:grid;
 
-display:flex;
+    grid-template-rows:repeat(4,1fr);
 
-flex-direction:column;
-
-gap:22px;
+    gap:1.2vh;
 
 }
 
-/* ==========================
-Cards
-========================== */
+/* ===========================
+CARD
+=========================== */
 
 .card{
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    align-items:center;
 
-align-items:center;
+    justify-content:space-between;
 
-padding:25px 35px;
+    padding:1.5vh 2vw;
 
-border-radius:20px;
+    border-radius:2vh;
 
-background:rgba(255,255,255,.15);
+    background:rgba(255,255,255,.10);
 
-backdrop-filter:blur(15px);
+    backdrop-filter:blur(15px);
 
-box-shadow:0 12px 35px rgba(0,0,0,.35);
-
-transition:.4s;
-
-border-left:12px solid white;
+    box-shadow:0 1vh 3vh rgba(0,0,0,.35);
 
 }
-
-.card:hover{
-
-transform:scale(1.02);
-
-}
-
-/* ==========================
-Rank
-========================== */
 
 .rank{
 
-font-size:55px;
+    font-size:3vw;
 
-width:90px;
+    width:5vw;
 
-text-align:center;
+    text-align:center;
 
 }
-
-/* ==========================
-House Name
-========================== */
 
 .house{
 
-font-size:38px;
+    flex:1;
 
-font-weight:700;
-
-flex:1;
-
-padding-left:20px;
-
-letter-spacing:2px;
+    padding-left:2vw;
 
 }
 
-/* ==========================
-Score
-========================== */
+.house h2{
+
+    font-size:2vw;
+
+}
+
+.house p{
+
+    font-size:1vw;
+
+    opacity:.8;
+
+}
+
+/* Progress */
+
+.progress{
+
+    margin-top:1vh;
+
+    height:1.2vh;
+
+    background:rgba(255,255,255,.20);
+
+    border-radius:1vh;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:1vh;
+
+}
+
+/* Score */
 
 .score{
 
-font-size:50px;
-
-font-weight:700;
+    text-align:right;
 
 }
 
-/* ==========================
-House Colours
-========================== */
+.score-value{
 
-.ruby{
+    font-size:3vw;
 
-border-left:15px solid #ff3b3b;
+    font-weight:800;
 
 }
 
-.emerald{
+.score-label{
 
-border-left:15px solid #00c853;
+    font-size:.9vw;
 
-}
-
-.sapphire{
-
-border-left:15px solid #2196f3;
+    letter-spacing:.2vw;
 
 }
 
-.topaz{
-
-border-left:15px solid #ffca28;
-
-}
-
-/* ==========================
-Footer
-========================== */
+/* ===========================
+FOOTER
+=========================== */
 
 footer{
 
-margin-top:30px;
+    display:flex;
 
-text-align:center;
+    justify-content:center;
 
-padding:15px;
+    align-items:center;
 
-font-size:18px;
+    font-size:1vw;
 
-background:rgba(255,255,255,.08);
-
-}
-
-/* ==========================
-Responsive
-========================== */
-
-@media(max-width:900px){
-
-header{
-
-flex-direction:column;
-
-gap:20px;
-
-text-align:center;
+    background:rgba(255,255,255,.08);
 
 }
 
-.card{
-
-padding:20px;
-
-}
-
-.rank{
-
-font-size:38px;
-
-}
-
-.house{
-
-font-size:26px;
-
-}
-
-.score{
-
-font-size:34px;
-
-}
-
-h1{
-
-font-size:28px;
-
-}
-
-.logo{
-
-width:65px;
-
-height:65px;
-
-}
-
-}
