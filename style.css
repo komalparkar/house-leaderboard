@@ -63,9 +63,9 @@ Header
 header{
 
 display:flex;
-   height:75px;
-width:92%;
-   max-width:1400px;
+   height:80px;
+width:96%;
+   max-width:1600px;
    margin:0 auto;
 justify-content:space-between;
 
@@ -140,15 +140,16 @@ Leaderboard
 
 #leaderboard{
 
-width:min(92%,1400px);
+width:70%;
+max-width:1200px;
+margin:25px auto;
+margin-top:15px;
+   margin-bottom:10px;
+display:flex;
 
-margin:20px auto;
-
-display:grid;
-grid-template-rows:repeat(4,70px);
 flex-direction:column;
-justify-content:center;
-gap:8px;
+
+gap:12px;
 
 }
 
@@ -159,19 +160,19 @@ Cards
 .card{
 width:100%;
 display:grid;
-grid-template-columns:70px 1fr 100px;;
+grid-template-columns:80px 1fr 120px;;
 align-items:center;
 
-height:70px;
-padding:0 25px;
-border-radius:14px;
+height:85px;
+padding:0 30px;
+border-radius:16px;
 background:rgba(255,255,255,.15);
 
 backdrop-filter:blur(12px);
 
-box-shadow:0 6px 18px rgba(0,0,0,.25);
+box-shadow:0 8px 20px rgba(0,0,0,.25);
 
-border-left:10px solid white;
+border-left:12px solid white;
 
 }
 
@@ -187,7 +188,7 @@ Rank
 
 .rank{
 
-font-size:34px;
+font-size:38px;
 
 width:50px;
 
@@ -201,7 +202,7 @@ House Name
 
 .house{
 
-font-size:18px;
+font-size:22px;
 
 font-weight:700;
 
@@ -215,7 +216,7 @@ Score
 
 .score{
 
-font-size:28px;
+font-size:34px;
 
 font-weight:700;
    text-align:right;
@@ -255,13 +256,13 @@ Footer
 
 footer{
 
-margin-top:30px;
+margin-top:15px;
 
 text-align:center;
 
-padding:20px;
+padding:15px;
 
-font-size:25px;
+font-size:22px;
 
 background:rgba(255,255,255,.08);
 
@@ -291,19 +292,19 @@ padding:20px;
 
 .rank{
 
-font-size:34px;
+font-size:38px;
 
 }
 
 .house{
 
-font-size:18px;
+font-size:22px;
 
 }
 
 .score{
 
-font-size:28px;
+font-size:34px;
 
 }
 
